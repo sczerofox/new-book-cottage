@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+</head>
+<body>
+    <form action="/filesUpload" method="post" enctype="multipart/form-data">
+        <br>
+        <label>文件:</label><input type="file" name="file" value="上传图片" /><br><br>
+        <label>类型:</label><input type="text" name="type" value="1" /><br><br>
+        <p>1. D:\Data\IdeaProjects\library0510\resources\files\images\22ab36333714432ea973aa85e1469cf2.jpg</p>
+        <p>2. 92baec5300c643e9b9150e5f863579fe.jpg</p>
+        <p>3. http://localhost:9090/images/ad9821e6cadc44ac83ded73f33319c1b.jpg</p>
+        <input type="submit" value="上传"/>
+    </form>
+    <br><br><br>
+
+    <form action="/filesDelete" method="post">
+        <input type="text" name="filePath" />
+        <input type="submit" value="删除"/>
+    </form>
+
+</body>
+</html>
